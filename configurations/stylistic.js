@@ -106,7 +106,7 @@ module.exports = {
     "max-nested-callbacks": ["error", { max: 2 }], // https://eslint.org/docs/rules/max-nested-callbacks
     "max-params": ["error", { max: 4 }], // https://eslint.org/docs/rules/max-params
     "max-statements": ["error", { max: 25 }, { ignoreTopLevelFunctions: false }], // https://eslint.org/docs/rules/max-statements
-    "max-statements-per-line": ["error", { max: 1 }], // https://eslint.org/docs/rules/max-statements-per-line
+    "@stylistic/max-statements-per-line": ["error", { max: 1 }], // https://eslint.style/rules/max-statements-per-line
     "multiline-comment-style": "off", // https://eslint.org/docs/rules/multiline-comment-style
     "multiline-ternary": "off", // https://eslint.org/docs/rules/multiline-ternary
     "new-cap": [
@@ -134,7 +134,7 @@ module.exports = {
     "no-multiple-empty-lines": "off", // https://eslint.org/docs/rules/no-multiple-empty-lines
     "no-negated-condition": "error", // https://eslint.org/docs/rules/no-negated-condition
     "no-nested-ternary": "error", // https://eslint.org/docs/rules/no-nested-ternary
-    "no-new-object": "error", // https://eslint.org/docs/rules/no-new-object
+    "no-object-constructor": "error", // https://eslint.org/docs/latest/rules/no-object-constructor
     "no-plusplus": "off", // https://eslint.org/docs/rules/no-plusplus
     "no-restricted-syntax": "off", // https://eslint.org/docs/rules/no-restricted-syntax
     "no-spaced-func": "off", // https://eslint.org/docs/rules/no-spaced-func
@@ -254,10 +254,10 @@ module.exports = {
       },
     },
     {
-      "files": ["*.{spec,test}.{ts,tsx}"],
-      "rules": {
-        "max-nested-callbacks": ["error", { "max": 4 }],
-      }
-    }
+      files: ["*.{spec,test}.{ts,tsx}"],
+      rules: {
+        "max-nested-callbacks": ["error", { max: 4 }],
+      },
+    },
   ],
 };
