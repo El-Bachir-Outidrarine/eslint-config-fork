@@ -13,7 +13,7 @@ module.exports = {
     "no-const-assign": "error", // https://eslint.org/docs/rules/no-const-assign
     "no-dupe-class-members": "off", // https://eslint.org/docs/rules/no-dupe-class-members
     "no-duplicate-imports": "off", // https://eslint.org/docs/rules/no-duplicate-imports
-    "no-new-symbol": "error", // https://eslint.org/docs/rules/no-new-symbol
+    "no-new-native-nonconstructor": "error", // https://eslint.org/docs/latest/rules/no-new-native-nonconstructor
     "no-restricted-exports": "off", // https://eslint.org/docs/rules/no-restricted-exports
     "no-restricted-imports": "off", // https://eslint.org/docs/rules/no-restricted-imports
     "no-this-before-super": "error", // https://eslint.org/docs/rules/no-this-before-super

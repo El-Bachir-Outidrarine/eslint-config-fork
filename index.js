@@ -13,7 +13,7 @@ module.exports = {
     "./configurations/stylistic",
     "./configurations/jsx-a11y",
   ],
-  plugins: [],
+  plugins: ["@stylistic"],
   rules: {},
   overrides: [
     /**
